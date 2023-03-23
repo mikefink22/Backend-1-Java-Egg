@@ -1,6 +1,8 @@
 simbolo numeral: alt+35
 barra invertida: alt+92
 -----
+# pegar texto:
+shitf+Insert o botón del medio del mouse
 # consultar posición
 pwd
 # cambiar de disco
