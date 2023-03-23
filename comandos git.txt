@@ -17,3 +17,6 @@ ls
 clear
 # salir
 exit
+#
+git commit -m "mensaje"
+El mensaje del commit ayuda a entender el propósito y el contexto de cada cambio. También facilita la colaboración y la revisión del código entre los desarrolladores.
