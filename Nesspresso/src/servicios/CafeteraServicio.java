@@ -28,12 +28,13 @@ public class CafeteraServicio {
         System.out.println("Ingrese la capacidad de la cafetera (en mililitros)");
         cafe1.setCapacidadMaxima(leer.nextInt());
         cafe1.setCantidadActual(cafe1.getCapacidadMaxima());
+        System.out.println("La cafetera está llena con "+cafe1.getCapacidadMaxima()+" ml., ¿qué desea hacer?");
         return cafe1;
     }
 
     public void ServirTaza(Cafetera cafe1) {
         int taza;
-        System.out.println("Ingrese la capacidad de la taza");
+        System.out.println("Ingrese la capacidad de la taza en ml");
         taza = leer.nextInt();
         if (taza > cafe1.getCantidadActual()) {
             System.out.println("No hay suficiente café para llenar la taza");
@@ -42,13 +43,13 @@ public class CafeteraServicio {
         } else {
             cafe1.setCantidadActual(cafe1.getCantidadActual() - taza);
             System.out.println("Se llenó la taza");
-            System.out.println("La cafetera tiene "+cafe1.getCantidadActual());
+            System.out.println("A la cafetera le quedan "+cafe1.getCantidadActual()+ " ml");
         }
     }
 
     public void vaciarCafetera(Cafetera cafe1) {
         cafe1.setCantidadActual(0);
-        System.out.println("Se vació cafetera");
+        System.out.println("Se vació la cafetera");
     }
 
     public void agregarCafe(Cafetera cafe1) {
@@ -57,7 +58,7 @@ public class CafeteraServicio {
         cantCafe = leer.nextInt();
         if (cantCafe + cafe1.getCantidadActual() <= cafe1.getCapacidadMaxima()) {
             cafe1.setCantidadActual(cantCafe + cafe1.getCantidadActual());
-            System.out.println("La cafetera tiene "+cafe1.getCantidadActual());
+            System.out.println("La cafetera tiene ahora "+cafe1.getCantidadActual() +"ml");
         } else {
             System.out.println("La cantidad ingresada es mayor a la capacidad de la cafetera");
             System.out.println("por lo que se llenó hasta la capacidad máxima");
