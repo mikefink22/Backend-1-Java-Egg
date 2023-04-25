@@ -40,6 +40,7 @@ public class Main {
                 cafeservicio.agregarCafe(cafe1);
                 break;
             case 4:
+                System.out.println("Adiós!!!");
                 System.out.println("Gracias por visitarnos!");
                 break;
             default:
