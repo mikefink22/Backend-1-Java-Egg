@@ -13,16 +13,16 @@ import java.util.Scanner;
  * @author Clinica
  */
 public class PersonaServicios {
+    Scanner leer = new Scanner(System.in).useDelimiter("\n");
    public Persona crearPersona(){
-       Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese el nombre:");
-        String nombre = leer.nextLine();
+        String nombre = leer.next();
 
         System.out.println("Ingrese la edad:");
         int edad = leer.nextInt();
         
         System.out.println("Ingrese el sexo(H - hombre, M - mujer, O - otro):");
-        String sexo = leer.nextLine();
+        String sexo = leer.next();
         
         System.out.println("Ingrese el peso en kg");
         int peso = leer.nextInt();
@@ -57,7 +57,18 @@ public class PersonaServicios {
    public void mostrarPersona(Persona Persona){
        System.out.println(Persona.getNombre());
        System.out.println("Edad: "+Persona.getEdad());
-       System.out.println("Sexo: "+Persona.getSexo());
+       if (Persona.getSexo().equalsIgnoreCase("H")) {
+           System.out.println("Sexo: Masculino");
+       }else if (Persona.getSexo().equalsIgnoreCase("H")){
+           System.out.println("Sexo: Femenino");
+       }else if (Persona.getSexo().equalsIgnoreCase("O")){
+           System.out.println("Sexo: Otro");
+       }else {
+           System.out.println("No ha ingresado correctamente el sexo, por favor ingréselo nuevamente:");
+           System.out.println("Ingrese el sexo(H - hombre, M - mujer, O - otro):");
+           String sexo = leer.next();
+       }
+       
        System.out.println("Peso "+Persona.getEdad());
        System.out.println("Altura "+Persona.getAltura());       
    }
