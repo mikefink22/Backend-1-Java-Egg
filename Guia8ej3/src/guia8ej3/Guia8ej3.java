@@ -20,11 +20,11 @@ public class Guia8ej3 {
         
       Persona persona1 = p1.crearPersona();
       p1.mostrarPersona(persona1);
-      if (p1.esMayorDeEdad(persona1)){
-            System.out.println("es mayor de edad");
-      }else {
-          System.out.println("es menor de edad");}
-      p1.calcularIMC(persona1);
-    }
+        if (p1.esMayorDeEdad(persona1)){
+              System.out.println("es mayor de edad");
+        }else {
+            System.out.println("es menor de edad");}
+        p1.calcularIMC(persona1);
+      }
     
 }
