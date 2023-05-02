@@ -28,7 +28,7 @@ public class Main {
 
     // No se puede acceder a los atributos o métodos privados de la clase Persona
     System.out.println("El peso es: " + persona1.getPeso()); // Error
-    // System.out.println("El IMC es: " + persona1.calcularIMC()); // Error
+    //System.out.println("El IMC es: " + persona1.calcularIMC()); // Error
         System.out.println("El IMC es: "+persona1.mostrarIMC());
     }
     

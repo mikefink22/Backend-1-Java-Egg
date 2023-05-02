@@ -26,13 +26,13 @@ public class EmpleadoServicio {
         }
     }
 
-    public double sumarSalarios(Empleado[] empleados) {
+    private double sumarSalarios(Empleado[] empleados) {
         double sumaSalarios = 0;
         for (int i = 0; i < empleados.length; i++) {
-            sumaSalarios += empleados[i].getSalario();
+            sumaSalarios =+ empleados[i].getSalario();
         }
         double promedioSalarios = sumaSalarios / empleados.length;
-        System.out.println("El promedio de todos los salarios es de: " + promedioSalarios);
+        System.out.println("Sal prom:" +promedioSalarios);
         return promedioSalarios;
     }
 

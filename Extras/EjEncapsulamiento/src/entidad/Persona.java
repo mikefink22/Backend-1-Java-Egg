@@ -55,7 +55,8 @@ public class Persona {
 
   // Método privado
   private double calcularIMC() {
-    return peso / (altura * altura);
+      double IMC = peso / (altura * altura);
+    return IMC;
   }
   
     // Método público para mostrar el IMC

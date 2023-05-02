@@ -20,10 +20,15 @@ import servicio.EmpleadoServicio;
 public class Main {
 
     public static void main(String[] args) {
-        Empleado[] empleados = new Empleado[6];
+        Empleado[] empleados = new Empleado[3];
         EmpleadoServicio es = new EmpleadoServicio();
 
         es.cargarEmpleado(empleados);
         es.empleadosSuperior(empleados);
+        double promedio = es.sumarSalarios(empleados);
+        //System.out.println("El promedio de los salarios es " +promedio);
+        Math.
+        
+        
     }
 }
